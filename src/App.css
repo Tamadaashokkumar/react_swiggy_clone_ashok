@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.NavBarSection {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 100px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    position:fixed;
+    width: 90%;
+    background-color:white;
+    z-index: 100;
+    top:0;
+    
+}
+.navbarLogo {
+    color: orange;
+    font-weight: bolder;
+    font-size: x-large;
+}
+/* Item section */
+
+.itemSection {
+    width:100%;
+    display:flex;
+    align-items: center;
+    margin-top: 100px;
+}
+.gallery {
+    width:150px;
+    
+}
+.gallery img {
+    width:100%;
+}
+
+/* Landing Section */
+
+.landingSection {
+    width:80%;
+    margin:auto;
+}
+
+/* chainse section */
+.chainSection { 
+    overflow-x: hidden;
+    position: relative;
+    display:flex;
+    height:auto;
+}
+.vendorBox {
+    border-radius: 10px;
+}
+.vendorBox img {
+    width:350px;
+    height:220px;
+    flex : 0 0 auto;
+    margin-right: 30px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.btnSection{
+    display:flex;
+    justify-content: flex-end;
+    position:relative;
+    top:50px;
+    right:20px;
+}
+.btnSection button {
+    border:none;
+    background-color: transparent;
+}
+.arrow {
+    font-size: x-large;
+    margin:0 5px;
+    background-color: lightgrey;
+    padding:4px;
+    border-radius:18px;
+    
+}
+.loadingSection {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:50px;
+}
+
+/*firms section*/
+
+.firmSection {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+.firmGroup {
+    position:relative;
+}
+.firmGroup img {
+    width:240px;
+    height:180px;
+    flex : 0 0 auto;
+    margin-right: 30px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.firmDetails{
+    padding-left:10px;
+}
+
+
+.firmOffer {
+    width:100%;
+    max-width:85%;
+    position: absolute;
+    bottom:5px;
+    background: white;
+    padding-left:10px;
+    padding-top:20px;
+    font-size: 1rem;
+    font-weight:800;
+    padding-bottom:10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: transparent;
+    background: linear-gradient(to bottom, rgba(50, 0, 0, 0.08), black);
+    color:white;
+    text-transform: uppercase;
+
+}
+.firmArea {
+    font-size:small;
+    color:gray;
+}
+.regionBtn {
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0px;
+    
+}
+.regionBtn button {
+    padding:8px 40px;
+    font-weight: 700;
+    border-radius:20px;
+    border : 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+.activeButton {
+    background-color: orange;
+    color:rgb(55, 12, 225);
+}
+
+/* product section */
+
+
+.productSection {  
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin:auto;
+    margin-top:100px;
+}
+
+.proudctGroup img {
+    width:150px;
+    border-radius:10px;
+}
+
+.productBox {
+    display:flex;
+    justify-content: space-between;
+    border-top:2px solid lightgray;
+    padding:10px 30px;
+    margin-top:10px;
+    position:relative;
+   
+}
+.addButton {
+    border: 1px solid lightgray;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    color: green;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    max-width: 100px;
+    margin-left: 25px;
+    padding:8px 0px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.link {
+    color:black;
+    text-decoration: none;
+}
+
+ 
+
+
+/* media quaires */
+
+@media (max-width:576px){
+    .productSection {
+        width:100%;
+        padding:0px 10px;
+    }
+    .NavBarSection {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        position:fixed;  
+        background-color:white;
+        z-index: 100;
+        top:0;
+        
+        padding:0 20px;
+        width:90vw;;
+        
+    }
+    .navbarLogo {
+        color: orange;
+        font-weight: bolder;
+        font-size: larger;   
+    }
+    h3 {
+        font-size:medium;
+       
+    }
+    .landingSection {
+        width:100%;
+        margin:auto;
+        padding:0 15px;
+    }
+    .itemSection {
+        width:95%;
+        display:flex;
+        align-items: center;
+        margin-top: 90px;
+    }
+    .vendorBox img {
+        width:260px;
+        height:180px;
+        flex : 0 0 auto;
+        margin-right: 30px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+   
+    .arrow {
+        font-size: x-large;
+        margin:0 5px;
+        background-color: lightgrey;
+        padding:4px;
+        border-radius:18px;
+    }
+    .mediaSection {
+        padding:0px;
+       
+        position:relative;
+        bottom:40px;
+       
+    }
+    .loadingSection {
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        margin-top:20px;
+    }
+    .chainSection { 
+        overflow-x: hidden;
+        position: relative;
+        display:flex;
+        height:auto;
+        
+    }
+
+    .firmSection {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .firmGroup {
+        position:relative;
+    }
+    .firmGroup img {
+        width:300px;
+        flex : 0 0 auto;
+        margin-right: 30px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .firmDetails{
+        padding-left:10px;
+    }
+
+    .firmOffer {
+        width:100%;
+        max-width:85%;
+        position: absolute;
+        bottom:5px;
+        background: white;
+        padding-left:10px;
+        padding-top:20px;
+        font-size: 1rem;
+        font-weight:800;
+        padding-bottom:10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: transparent;
+        background: linear-gradient(to bottom, rgba(50, 0, 0, 0.08), black);
+        color:white;
+        text-transform: uppercase;
+    
+    }
+    .firmArea {
+        font-size:small;
+        color:gray;
+    }
+    .regionBtn {
+        display: flex;
+        justify-content: space-between;
+        margin:5px 10px;
+        padding-right:10px;
+       
+        
+    }
+    .regionBtn button {
+        padding:4px 10px;
+        font-weight: 600;
+        border-radius:20px;
+        border : 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+    }
+      
+}
