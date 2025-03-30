@@ -221,10 +221,12 @@ body{
         background-color:white;
         z-index: 100;
         top:0;
-        
         padding:0 20px;
-        width:100vw;;
+        width:100vw;
         
+    }
+    .userAuth {
+        margin-right:0px;
     }
     .navbarLogo {
         color: orange;
@@ -287,13 +289,14 @@ body{
         display:flex;
         flex-direction: column;
         align-items: center;
+        margin:auto;
        
     }
     .firmGroup {
         position:relative;
     }
     .firmGroup img {
-        width:300px;
+        width:280px;
         flex : 0 0 auto;
         margin-right: 30px;
         object-fit: cover;
@@ -335,9 +338,11 @@ body{
         
     }
     .regionBtn button {
-        padding:4px 10px;
+        height:40px;
+        width:140px;
+        padding:6px;
         font-weight: 600;
-        border-radius:20px;
+        border-radius:10px;
         border : 1px solid rgb(0, 0, 0);
         cursor: pointer;
         margin-right:10px;
