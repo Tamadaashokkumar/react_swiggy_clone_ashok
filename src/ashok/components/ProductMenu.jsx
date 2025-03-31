@@ -39,7 +39,7 @@ const ProductMenu = () => {
                             </div>
 
                             <div className="proudctGroup">
-                                <img src={`${url}/uploads/${item.image}`} alt={item.firmName} />
+                                <img src={item.image} alt={item.firmName} />
                                 <div className="addButton">ADD</div>
                             </div>
                         </div>

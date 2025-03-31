@@ -82,7 +82,7 @@ const Chains = () => {
                                 return (
                                     <>
                                         <div className="firmGroup">
-                                            <img src={`${url}/uploads/${item.image}`} alt={item.image} />
+                                            <img src={item.image} alt={item.image} />
                                         </div>
                                     </>
                                 )

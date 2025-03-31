@@ -46,7 +46,7 @@ const FirmCollections = () => {
                                 <Link to={`products/${item._id}/${item.firmName}`} className="link">
                                     <div className="firmBox">
                                         <div className="firmGroup">
-                                            <img src={`${url}/uploads/${item.image}`} alt={item.firmName} />
+                                            <img src={item.image} alt={item.firmName} />
                                             <div className="firmOffer">
                                                 {item.offer}
                                             </div>
