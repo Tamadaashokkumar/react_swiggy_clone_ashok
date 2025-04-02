@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { url } from '../api'
 import { IoArrowForwardOutline } from "react-icons/io5";
 import { IoArrowBackOutline } from "react-icons/io5";
-import { DNA } from 'react-loader-spinner'
+import { Watch } from 'react-loader-spinner'
 
 
 
@@ -52,14 +52,16 @@ const Chains = () => {
             <div className="loadingSection">
                 {loading && (
                     <>
-                        <div>Your 🍝 is Loading...</div>
-                        <DNA
+
+                        <Watch
                             visible={true}
                             height="80"
                             width="80"
-                            ariaLabel="dna-loading"
+                            radius="48"
+                            color="#4fa94d"
+                            ariaLabel="watch-loading"
                             wrapperStyle={{}}
-                            wrapperClass="dna-wrapper"
+                            wrapperClass=""
                         />
                     </>
                 )}
