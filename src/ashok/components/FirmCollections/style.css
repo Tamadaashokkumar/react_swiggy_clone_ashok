@@ -85,11 +85,11 @@
     border: 1px solid red;
   }
   .imageContainer img {
-    width: 100%;
+    width: 96%;
     height: 300px;
   }
   .firmOffer {
-    width: 100%;
+    width: 96%;
     position: absolute;
     bottom: 0px;
     background: white;
@@ -113,9 +113,11 @@
     text-align: center;
   }
 }
-.mainCotainer {
-  transition: all 0.3s;
-}
-.mainCotainer:hover {
-  transform: scale(1.1);
+@media screen and (min-width: 578px) {
+  .mainCotainer {
+    transition: all 0.3s;
+  }
+  .mainCotainer:hover {
+    transform: scale(1.1);
+  }
 }

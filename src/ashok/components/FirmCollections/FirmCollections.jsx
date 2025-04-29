@@ -83,19 +83,19 @@ const FirmCollections = () => {
                   ) {
                     return (
                       <div
-                        className="col-12 col-sm-6  col-lg-4 col-xl-3 mb-3 m-auto"
+                        className="col-12 col-sm-6  col-lg-4 col-xl-3 mb-5 m-auto"
                         key={item._id}
                       >
                         <Link
                           to={`products/${item._id}/${item.firmName}`}
                           id="link"
                         >
-                          <div className="mainCotainer">
+                          <div className="mainCotainer mb-5">
                             <div className="imageContainer">
                               <img src={item.image} alt={item.firmName} />
                               <div className="firmOffer">{item.offer}</div>
                             </div>
-                            <div className="firmDetails">
+                            <div className="firmDetails mt-3 mb-1">
                               <strong>{item.firmName}</strong>
                               <div className="firmArea">
                                 {item.region.join(", ")}
