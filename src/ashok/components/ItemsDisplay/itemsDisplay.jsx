@@ -5,7 +5,7 @@ const ItemsDisplay = () => {
   const [displayItem, setDisplayItem] = useState(itemData);
   return (
     <>
-      <div className="itemsDisplayContainer">
+      <div className="itemsDisplayContainer mb-5 mt-5">
         <div className="container">
           <div className="row">
             <div className="col-12">

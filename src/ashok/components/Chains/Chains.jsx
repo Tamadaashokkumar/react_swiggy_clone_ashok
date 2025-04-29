@@ -43,7 +43,7 @@ const Chains = () => {
   };
 
   return (
-    <div className="chainsContainer">
+    <div className="chainsContainer mb-5 mt-5">
       <div className="container">
         <div className="row">
           <div className="col-12">
