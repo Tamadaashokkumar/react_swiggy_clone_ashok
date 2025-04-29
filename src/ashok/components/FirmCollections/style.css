@@ -1,0 +1,121 @@
+.firmSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.imageContainer {
+  position: relative;
+}
+.imageContainer img {
+  width: 240px;
+  height: 180px;
+  flex: 0 0 auto;
+  margin-right: 30px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.firmDetails {
+  padding-left: 10px;
+}
+
+.firmOffer {
+  width: 240px;
+  position: absolute;
+  bottom: 0px;
+  background: white;
+  padding-left: 10px;
+  padding-top: 20px;
+  font-size: 1rem;
+  font-weight: 800;
+  padding-bottom: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: transparent;
+  background: linear-gradient(to bottom, rgba(50, 0, 0, 0.08), black);
+  color: white;
+  text-transform: uppercase;
+}
+.firmArea {
+  font-size: small;
+  color: gray;
+}
+#link {
+  color: black;
+  text-decoration: none;
+}
+#link:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+#allActiveBtn {
+  background-color: blue;
+  color: white;
+  border: none;
+  outline: none;
+}
+#southbtn {
+  background-color: #9fa6b2;
+  color: white;
+  border: none;
+  outline: none;
+}
+#northbtn {
+  background-color: #54b4d3;
+  color: white;
+  border: none;
+  outline: none;
+}
+#bakarybtn {
+  background-color: (#14a44d);
+  color: white;
+  border: none;
+  outline: none;
+}
+#chinesebtn {
+  background-color: #e4a11b;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 576px) {
+  .firmSection {
+    height: 400px;
+    border: 1px solid red;
+  }
+  .imageContainer img {
+    width: 100%;
+    height: 300px;
+  }
+  .firmOffer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background: white;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 1rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: transparent;
+    background: linear-gradient(to bottom, rgba(50, 0, 0, 0.08), black);
+    color: white;
+    text-transform: uppercase;
+  }
+  .firmHeading {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  .BtnContainer {
+    text-align: center;
+  }
+}
+.mainCotainer {
+  transition: all 0.3s;
+}
+.mainCotainer:hover {
+  transform: scale(1.1);
+}

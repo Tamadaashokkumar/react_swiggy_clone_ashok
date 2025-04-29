@@ -1,0 +1,49 @@
+.chainSection {
+  overflow-x: hidden;
+  display: flex;
+  height: auto;
+}
+.vendorBox {
+  border-radius: 10px;
+}
+.vendorBox img {
+  width: 350px;
+  height: 220px;
+  flex: 0 0 auto;
+  margin-right: 30px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.btnSection {
+  padding: 2px;
+}
+
+.btnSection button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.arrow {
+  font-size: 30px;
+  margin: 0 5px;
+  background-color: rgb(196, 187, 187);
+  padding: 4px;
+  border-radius: 18px;
+  outline: none;
+}
+.arrow:active {
+  background-color: rgb(220, 32, 151);
+}
+.loadingSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+@media only screen and (max-width: 576px) {
+  .chainHeading {
+    font-size: large;
+    font-weight: bolder;
+  }
+}

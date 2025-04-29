@@ -1,0 +1,134 @@
+.productSection {
+  margin-top: 100px;
+}
+
+/* .proudctGroup img {
+  width: 150px;
+  border-radius: 10px;
+} 
+
+.productBox {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid lightgray;
+  padding: 10px 30px;
+  margin-top: 10px;
+  position: relative;
+}
+.addButton {
+  border: 1px solid lightgray;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  color: green;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  max-width: 100px;
+  margin-left: 25px;
+  padding: 8px 0px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.link {
+  color: black;
+  text-decoration: none;
+} */
+.ImageContainer img {
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+}
+.ProductContainer {
+  border-radius: 14px;
+  background-color: red;
+}
+.productName {
+  font-size: larger;
+  font-family: "Roboto";
+}
+.itemtext1 {
+  color: rgb(30, 9, 9);
+  font-weight: 700;
+  font-size: large;
+}
+.itemtext2 {
+  color: rgb(30, 9, 9);
+  font-weight: 500;
+}
+.restaurantName {
+  font-weight: bolder;
+  font-size: xx-large;
+  color: rgb(54, 15, 15);
+}
+.ImageContainer {
+  position: relative;
+}
+
+.addButtons {
+  border: 1px solid lightgray;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  color: green;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-weight: bolder;
+  max-width: 100px;
+  margin-left: 25px;
+  padding: 4px 0px;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+@media only screen and (max-width: 576px) {
+  .productName {
+    font-size: large;
+    font-family: "Roboto";
+  }
+  .itemtext1 {
+    color: rgb(30, 9, 9);
+    font-weight: 700;
+    font-size: medium;
+  }
+  .itemtext2 {
+    color: rgb(30, 9, 9);
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .ImageContainer img {
+    width: 170px;
+    height: 130px;
+    border-radius: 10px;
+  }
+
+  .addButtons {
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    color: green;
+    position: relative;
+    bottom: 35px;
+    left: 12px;
+    width: 100%;
+    font-weight: bolder;
+    max-width: 100px;
+    margin-left: 25px;
+    padding: 4px 0px;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+}
