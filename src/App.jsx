@@ -1,16 +1,52 @@
 import React from "react";
 import "./App.css";
-import LandingPage from "./ashok/pages/LandingPage";
 import { Route, Routes } from "react-router-dom";
+
+import LandingPage from "./ashok/pages/LandingPage";
 import ProductMenu from "./ashok/components/ProductMenu/ProductMenu";
+import LoginSignup from "./ashok/components/LoginSignUp/LoginSignup";
+import ProtectedRoute from "./ashok/ProtectedRoute";
+
+// ✅ Import Cart Context
+import { CartProvider } from "./ashok/context/CartContext"; // Adjust the path as needed
+import Cart from "./ashok/components/cart/Cart";
+
 const App = () => {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/products/:firmId/:firmName" element={<ProductMenu />} />
-      </Routes>
-    </div>
+    // ✅ Wrap everything with CartProvider
+    <CartProvider>
+      <div>
+        <Routes>
+          <Route path="/auth" element={<LoginSignup />} />
+
+          {/* Protected Routes */}
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute>
+                <LandingPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/products/:firmId/:firmName"
+            element={
+              <ProtectedRoute>
+                <ProductMenu />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/cart"
+            element={
+              <ProtectedRoute>
+                <Cart />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
+      </div>
+    </CartProvider>
   );
 };
 

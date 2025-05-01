@@ -78,11 +78,11 @@ const Chains = () => {
                           <div className="vendorBox" key={vendor._id}>
                             {vendor.firm.map((item) => {
                               return (
-                                <>
-                                  <div className="firmGroup" key={item.image}>
+                                <React.Fragment key={item.image}>
+                                  <div className="firmGroup">
                                     <img src={item.image} alt={item.image} />
                                   </div>
-                                </>
+                                </React.Fragment>
                               );
                             })}
                           </div>

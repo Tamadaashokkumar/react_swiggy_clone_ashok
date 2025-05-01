@@ -138,3 +138,30 @@
   align-items: center;
   height: 80vh;
 }
+/* style.css */
+.productSection {
+  padding: 10px;
+}
+
+.productName {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.itemtext1 {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.itemtext2 {
+  color: #555;
+}
+
+.ImageContainer img {
+  max-width: 100px;
+  object-fit: cover;
+}
+
+.ProductContainer {
+  border-radius: 10px;
+}

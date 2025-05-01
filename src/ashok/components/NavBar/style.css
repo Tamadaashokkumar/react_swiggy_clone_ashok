@@ -12,3 +12,12 @@
   font-weight: bolder;
   font-size: x-large;
 }
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+#count {
+  text-decoration: none;
+  color: black;
+}
