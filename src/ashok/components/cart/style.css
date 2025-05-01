@@ -11,36 +11,3 @@
 .list-group-item img {
   object-fit: cover;
 }
-
-@media (max-width: 576px) {
-  .list-group-item {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-
-  .list-group-item .btn {
-    margin-top: 8px;
-  }
-}
-.cart-container {
-  max-width: 800px;
-}
-
-.list-group-item img {
-  object-fit: cover;
-}
-
-.list-group-item .btn {
-  margin-top: 8px;
-}
-
-.text-muted {
-  font-size: 14px;
-}
-
-@media (max-width: 576px) {
-  .list-group-item {
-    flex-direction: column;
-    align-items: flex-start !important;
-  }
-}
